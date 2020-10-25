@@ -10,13 +10,13 @@ export default {
   components: {},
 
   computed: {
-    ...mapState('Shop', []),
-    ...mapGetters('Shop', [])
+    ...mapState('Products', []),
+    ...mapGetters('Products', [])
   },
 
   methods: {
-    ...mapMutations('Shop', []),
-    ...mapActions('Shop', [])
+    ...mapMutations('Products', []),
+    ...mapActions('Products', [])
   }
 }
 </script>
