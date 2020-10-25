@@ -1,0 +1,40 @@
+{
+  "name": "book-shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "install-all": "yarn workspaces run install",
+    "client:start": "yarn workspace client run start",
+    "server:start": "yarn workspace server run start",
+    "server:build": "yarn workspace server run build",
+    "app:start": "concurrently \"yarn client:start\" \"yarn server:start\""
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0",
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0",
+    "cross-env": "^7.0.2",
+    "qs": "^6.9.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.0",
+    "@vue/cli-plugin-pwa": "^4.5.0",
+    "@vue/cli-service": "^4.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11",
+    "concurrently": "^5.3.0"
+  }
+}
