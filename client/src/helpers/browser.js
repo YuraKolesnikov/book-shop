@@ -11,18 +11,19 @@ export const getViewPortDimensions = () => {
 }
 
 export const getBrowser = () => {
+	const ua = navigator.userAgent;
 	let browser
-	console.log(navigator.userAgent)
-	if ((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1) {
+
+	if ((ua.indexOf("Opera") || ua.indexOf('OPR')) !== -1) {
 		browser = 'opera'
-	} else if (navigator.userAgent.indexOf("Chrome") != -1) {
+	} else if (ua.indexOf("Chrome") !== -1) {
 		browser = 'chrome'
-	} else if (navigator.userAgent.indexOf("Safari") != -1) {
+	} else if (ua.indexOf("Safari") !== -1) {
 		browser = 'safari'
-	} else if (navigator.userAgent.indexOf("Firefox") != -1) {
+	} else if (ua.indexOf("Firefox") !== -1) {
 		browser = 'firefox'
-	} else if ((navigator.userAgent.indexOf("MSIE") != -1) || (!!document.documentMode == true)) //IF IE > 10
-	{
+	} else if ((ua.indexOf("MSIE") !== -1) || (!!document.documentMode)) {
+		//IF IE > 10
 		browser = 'ie'
 	}
 

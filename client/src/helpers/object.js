@@ -3,7 +3,7 @@ import { getTypeOf } from '@/helpers/data';
 function clearField(obj, field) {
 	const type = getTypeOf(obj[field])
 
-	if (type == 'null' || type == 'undefined') {
+	if (type === 'null' || type === 'undefined') {
 		obj[field] = null
 	} else if (type === 'map') {
 		obj[field] = new Map()

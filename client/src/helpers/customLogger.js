@@ -1,3 +1,5 @@
+/* TODO: Добавить новые опции, обработчик ошибок */
+
 export const customLogger = ({ message, type = 'log', source = undefined, data }) => {
 	let color;
 
