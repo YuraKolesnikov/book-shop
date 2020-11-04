@@ -4,18 +4,9 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-import { getViewPortDimensions, getBrowser, getOrientation, getDeviceType } from '@/helpers/browser'
-const dimensions = getViewPortDimensions()
-const browser = getBrowser()
-const orientation = getOrientation()
-const deviceType = getDeviceType()
+import { GlobalDirectives } from '@/directives/directives'
 
-console.log({
-  ...dimensions,
-  browser,
-  orientation,
-  deviceType
-})
+Vue.use(GlobalDirectives)
 
 Vue.config.productionTip = false
 
