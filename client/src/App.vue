@@ -15,6 +15,9 @@ export default {
   async mounted() {
     const data = await api('/api/products').get()
     console.log(data)
+
+    const response = await api('/api/users/register').post({ username: 'cezar278@inbox.lv', password: 'Mrguitarmadness12' })
+    console.log(response)
   }
 }
 </script>

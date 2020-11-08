@@ -6,6 +6,18 @@
   "private": true,
   "scripts": {
     "start": "cross-env NODE_ENV=development nodemon .",
-    "build": "node --max-old-space-size=12288 NODE_ENV=productions node ."
+    "build": "node --max-old-space-size=12288 NODE_ENV=production node ."
+  },
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "mongoose": "5.9.5",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }

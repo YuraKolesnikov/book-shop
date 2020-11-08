@@ -2,9 +2,19 @@ const mongoose = require('mongoose'),
 	    Schema = mongoose.Schema
 
 const ProductSchema = new Schema({
-	title: String,
-	price: Number,
-	price_new: [null, Number],
+	title: {
+		type: String,
+		required: true,
+		trim: true
+	},
+	price: {
+		type: Number,
+		required: true
+	},
+	price_new: {
+		type: Number,
+		default: null
+	},
 	category: Number,
 	label: Number,
 	img_url: String,

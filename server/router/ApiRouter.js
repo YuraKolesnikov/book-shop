@@ -1,8 +1,7 @@
 const express = require('express')
 
 const { productsRouter } = require('./ProductsRouter')
-
-console.log('Products router loaded')
+const { userRouter } = require('./UserRouter')
 
 class ApiRouter {
 	constructor(router, routes) {
@@ -25,7 +24,8 @@ class ApiRouter {
 }
 
 const routes = [
-	{ url: '/products', router: productsRouter }
+	{ url: '/products', router: productsRouter },
+	{ url: '/users', router: userRouter }
 ]
 
 module.exports = {
