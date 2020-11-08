@@ -1,63 +1,63 @@
-class CategoryModel {}
+const CategoryModel = {
+	BIOGRAPHY: {
+		id: 1,
+		title: 'Biography'
+	},
 
-CategoryModel.BIOGRAPHY = {
-	id: 1,
-	title: 'Biography'
-}
+	BUSINESS: {
+		id: 2,
+		title: 'Business'
+	},
 
-CategoryModel.BUSINESS = {
-	id: 2,
-	title: 'Business'
-}
+	COOKBOOKS: {
+		id: 3,
+		title: 'Cookbooks'
+	},
 
-CategoryModel.COOKBOOKS = {
-	id: 3,
-	title: 'Cookbooks'
-}
+	HEALTH_AND_FITNESS: {
+		id: 4,
+		title: 'Health & Fitness'
+	},
 
-CategoryModel.HEALTH_AND_FITNESS = {
-	id: 4,
-	title: 'Health & Fitness'
-}
+	HISTORY: {
+		id: 5,
+		title: 'History'
+	},
 
-CategoryModel.HISTORY = {
-	id: 5,
-	title: 'History'
-}
+	MISTERY: {
+		id: 6,
+		title: 'Mystery'
+	},
 
-CategoryModel.MISTERY = {
-	id: 6,
-	title: 'Mystery'
-}
+	INSPIRATION: {
+		id: 7,
+		title: 'Inspiration'
+	},
 
-CategoryModel.INSPIRATION = {
-	id: 7,
-	title: 'Inspiration'
-}
+	ROMANCE: {
+		id: 8,
+		title: 'Romance'
+	},
 
-CategoryModel.ROMANCE = {
-	id: 8,
-	title: 'Romance'
-}
+	FICTION_FANTASY: {
+		id: 9,
+		title: 'Fiction/Fantasy'
+	},
 
-CategoryModel.FICTION_FANTASY = {
-	id: 9,
-	title: 'Fiction/Fantasy'
-}
+	SELF_IMPROVEMENT: {
+		id: 10,
+		title: 'Self-Improvement'
+	},
 
-CategoryModel.SELF_IMPROVEMENT = {
-	id: 10,
-	title: 'Self-Improvement'
-}
+	HUMOR: {
+		id: 11,
+		title: 'Humor Books'
+	},
 
-CategoryModel.HUMOR = {
-	id: 11,
-	title: 'Humor Books'
-}
-
-CategoryModel.KIDS = {
-	id: 12,
-	title: 'Kids Literature'
+	KIDS: {
+		id: 12,
+		title: 'Kids Literature'
+	}
 }
 
 CategoryModel.LIST = [

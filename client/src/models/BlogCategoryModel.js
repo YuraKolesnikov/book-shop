@@ -1,18 +1,18 @@
-class BlogCategoryModel {}
+const BlogCategoryModel = {
+	BOOKS: {
+		id: 1,
+		title: 'Books'
+	},
 
-BlogCategoryModel.BOOKS = {
-	id: 1,
-	title: 'Books'
-}
+	HISTORY: {
+		id: 2,
+		title: 'History'
+	},
 
-BlogCategoryModel.HISTORY = {
-	id: 2,
-	title: 'History'
-}
-
-BlogCategoryModel.NEWS = {
-	id: 3,
-	title: 'News'
+	NEWS: {
+		id: 3,
+		title: 'News'
+	}
 }
 
 BlogCategoryModel.LIST = [

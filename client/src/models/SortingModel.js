@@ -1,68 +1,68 @@
-class SortingModel {}
+const  SortingModel = {
+	BEST_MATCH: {
+		id: 'best_match',
+		title: 'Best match'
+	},
 
-SortingModel.BEST_MATCH = {
-	id: 'best_match',
-	title: 'Best match'
-}
+	PRICE_ASC: {
+		id: 'price_asc',
+		title: 'Price ascending'
+	},
 
-SortingModel.PRICE_ASC = {
-	id: 'price_asc',
-	title: 'Price ascending'
-}
+	PRICE_DESC: {
+		id: 'price_desc',
+		title: 'Price descending'
+	},
 
-SortingModel.PRICE_DESC = {
-	id: 'price_desc',
-	title: 'Price descending'
-}
+	PUBLISH_DATE_ASC: {
+		id: 'publish_date_asc',
+		title: 'Author name ascending'
+	},
 
-SortingModel.PUBLISH_DATE_ASC = {
-	id: 'publish_date_asc',
-	title: 'Author name ascending'
-}
+	PUBLISH_DATE_DESC: {
+		id: 'publish_date_desc',
+		title: 'Author name descending'
+	},
 
-SortingModel.PUBLISH_DATE_DESC = {
-	id: 'publish_date_desc',
-	title: 'Author name descending'
-}
+	AUTHOR_NAME_ASC: {
+		id: 'author_name_asc',
+		title: 'Author name ascending'
+	},
 
-SortingModel.AUTHOR_NAME_ASC = {
-	id: 'author_name_asc',
-	title: 'Author name ascending'
-}
+	AUTHOR_NAME_DESC: {
+		id: 'author_name_desc',
+		title: 'Author name descending'
+	},
 
-SortingModel.AUTHOR_NAME_DESC = {
-	id: 'author_name_desc',
-	title: 'Author name descending'
-}
+	TITLE_ASC: {
+		id: 'title_asc',
+		title: 'Title ascending'
+	},
 
-SortingModel.TITLE_ASC = {
-	id: 'title_asc',
-	title: 'Title ascending'
-}
+	TITLE_DESC: {
+		id: 'title_desc',
+		title: 'Title descending'
+	},
 
-SortingModel.TITLE_DESC = {
-	id: 'title_desc',
-	title: 'Title descending'
-}
+	NEW_FIRST: {
+		id: 'new_first',
+		title: 'New first'
+	},
 
-SortingModel.NEW_FIRST = {
-	id: 'new_first',
-	title: 'New first'
-}
+	HOT_FIRST: {
+		id: 'hot_first',
+		title: 'Hot first'
+	},
 
-SortingModel.HOT_FIRST = {
-	id: 'hot_first',
-	title: 'Hot first'
-}
+	BESTSELLER: {
+		id: 'bestseller_first',
+		title: 'Bestseller first'
+	},
 
-SortingModel.BESTSELLER = {
-	id: 'bestseller_first',
-	title: 'Bestseller first'
-}
-
-SortingModel.ON_SALE = {
-	id: 'on_sale_first',
-	title: 'On sale first'
+	ON_SALE: {
+		id: 'on_sale_first',
+		title: 'On sale first'
+	},
 }
 
 SortingModel.LIST = [

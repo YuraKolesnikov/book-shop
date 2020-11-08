@@ -1,36 +1,36 @@
-import ContactModel from './ContactModel';
+const OrderStatusModel = {
+	WAITING_FOR_PAYMENT: {
+		id: 1,
+		title: 'Waiting for payment'
+	},
 
-class OrderStatusModel {}
+	PAID: {
+		id: 2,
+		title: 'Paid'
+	},
 
-OrderStatusModel.WAITING_FOR_PAYMENT = {
-	id: 1,
-	title: 'Waiting for payment'
+	SHIPPING: {
+		id: 3,
+		title: 'Shipping'
+	},
+
+	DELIVERED: {
+		id: 4,
+		title: 'Delivered'
+	},
+
+	CANCELED: {
+		id: 5,
+		title: 'Canceled'
+	},
+
+	REFUNDED: {
+		id: 6,
+		title: 'Refunded'
+	},
 }
 
-OrderStatusModel.PAID = {
-	id: 2,
-	title: 'Paid'
-}
 
-OrderStatusModel.SHIPPING = {
-	id: 3,
-	title: 'Shipping'
-}
-
-OrderStatusModel.DELIVERED = {
-	id: 4,
-	title: 'Delivered'
-}
-
-OrderStatusModel.CANCELED = {
-	id: 5,
-	title: 'Canceled'
-}
-
-OrderStatusModel.REFUNDED = {
-	id: 6,
-	title: 'Refunded'
-}
 
 OrderStatusModel.LIST = [
 	OrderStatusModel.WAITING_FOR_PAYMENT,

@@ -1,57 +1,70 @@
-import CategoryModel from './CategoryModel';
+import CountryCodes from './CountryCodes';
 
-class ContactModel {}
+const ContactModel = {
+	FIRST_NAME: {
+		id: 'first_name',
+		title: 'First name'
+	},
 
-ContactModel.FIRST_NAME = {
-	id: 'first_name',
-	title: 'First name'
+	LAST_NAME: {
+		id: 'last_name',
+		title: 'Last name'
+	},
+
+	COMPANY_NAME: {
+		id: 'company_name',
+		title: 'Company name'
+	},
+
+	EMAIL: {
+		id: 'email',
+		title: 'Email'
+	},
+
+	PHONE: {
+		id: 'phone',
+		title: 'Phone'
+	},
+
+	WEBSITE: {
+		id: 'website',
+		title: 'Website'
+	},
+
+	MESSAGE: {
+		id: 'message',
+		title: 'Type your message here...'
+	},
+
+	COUNTRY: {
+		id: 'country',
+		title: 'Country',
+		options: CountryCodes
+	},
+
+	ADDRESS: {
+		id: 'address',
+		title: 'Address'
+	},
+
+	POSTCODE: {
+		id: 'postcode',
+		title: 'Postcode / ZIP'
+	}
 }
 
-ContactModel.LAST_NAME = {
-	id: 'last_name',
-	title: 'Last name'
-}
-
-ContactModel.COMPANY_NAME = {
-	id: 'company_name',
-	title: 'Company name'
-}
-
-ContactModel.EMAIL = {
-	id: 'email',
-	title: 'Email'
-}
-
-ContactModel.PHONE = {
-	id: 'phone',
-	title: 'Phone'
-}
-
-ContactModel.WEBSITE = {
-	id: 'website',
-	title: 'Website'
-}
-
-ContactModel.MESSAGE = {
-	id: 'message',
-	title: 'Type your message here...'
-}
-
-ContactModel.COUNTRY = {
-	id: 'country',
-	title: 'Country',
-	options: []
-}
-
-ContactModel.ADDRESS = {
-	id: 'address',
-	title: 'Address'
-}
-
-ContactModel.POSTCODE = {
-	id: 'postcode',
-	title: 'Postcode / ZIP'
-}
+ContactModel.LIST = [
+	ContactModel.FIRST_NAME,
+	ContactModel.LAST_NAME,
+	ContactModel.COMPANY_NAME,
+	ContactModel.EMAIL,
+	ContactModel.PHONE,
+	ContactModel.WEBSITE,
+	ContactModel.MESSAGE,
+	ContactModel.COUNTRY,
+	ContactModel.ADDRESS,
+	ContactModel.POSTCODE,
+]
 
 ContactModel.ID_TO_DATA = {
 	[ContactModel.FIRST_NAME.id]:   ContactModel.FIRST_NAME,

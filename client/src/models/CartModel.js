@@ -1,28 +1,28 @@
-class CartModel {}
+const CartModel = {
+	IMAGE: {
+		id: 'image',
+		title: 'Image'
+	},
 
-CartModel.IMAGE = {
-	id: 'image',
-	title: 'Image'
-}
+	PRODUCT: {
+		id: 'product',
+		title: 'Product'
+	},
 
-CartModel.PRODUCT = {
-	id: 'product',
-	title: 'Product'
-}
+	PRICE: {
+		id: 'price',
+		title: 'Price'
+	},
 
-CartModel.PRICE = {
-	id: 'price',
-	title: 'Price'
-}
+	QUANTITY: {
+		id: 'quantity',
+		title: 'Quantity'
+	},
 
-CartModel.QUANTITY = {
-	id: 'quantity',
-	title: 'Quantity'
-}
-
-CartModel.TOTAL = {
-	id: 'total',
-	title: 'Total'
+	TOTAL: {
+		id: 'total',
+		title: 'Total'
+	}
 }
 
 CartModel.LIST = [

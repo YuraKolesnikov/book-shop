@@ -1,20 +1,22 @@
-class PaymentModel {}
+const PaymentModel = {
+	CASH_ON_DELIVERY: {
+		id: 1,
+		title: 'Cash on Delivery',
+		componentName: ''
+	},
 
-PaymentModel.CASH_ON_DELIVERY = {
-	id: 1,
-	title: 'Cash on Delivery',
-	componentName: ''
+	CARD_ON_DELIVERY: {
+		id: 2,
+		title: 'Card on Delivery'
+	},
+
+	ONLINE: {
+		id: 3,
+		title: 'Online payment'
+	}
 }
 
-PaymentModel.CARD_ON_DELIVERY = {
-	id: 2,
-	title: 'Card on Delivery'
-}
 
-PaymentModel.ONLINE = {
-	id: 3,
-	title: 'Online payment'
-}
 
 PaymentModel.LIST = [
 	PaymentModel.CASH_ON_DELIVERY,

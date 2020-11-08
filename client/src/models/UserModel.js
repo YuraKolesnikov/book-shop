@@ -1,17 +1,19 @@
-import ContactModel from './ContactModel';
-import ProductStatusModel from './ProductStatusModel';
+const UserModel = {
+	LOGIN: {
+		id: 'login',
+		title: 'Login'
+	},
 
-class UserModel {}
-
-UserModel.LOGIN = {
-	id: 'login',
-	title: 'Login'
+	PASSWORD: {
+		id: 'password',
+		title: 'Password'
+	}
 }
 
-UserModel.PASSWORD = {
-	id: 'password',
-	title: 'Password'
-}
+UserModel.LIST = [
+	UserModel.LOGIN,
+	UserModel.PASSWORD
+]
 
 UserModel.ID_TO_DATA = {
 	[UserModel.LOGIN.id]:     UserModel.LOGIN,

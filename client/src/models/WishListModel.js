@@ -1,18 +1,18 @@
-class WishListModel {}
+const WishListModel = {
+	PRODUCT: {
+		id: 'product',
+		title: 'Product'
+	},
 
-WishListModel.PRODUCT = {
-	id: 'product',
-	title: 'Product'
-}
+	PRICE: {
+		id: 'price',
+		title: 'Price'
+	},
 
-WishListModel.PRICE = {
-	id: 'price',
-	title: 'Price'
-}
-
-WishListModel.STOCK_STATUS = {
-	id: 'in_stock',
-	title: 'Stock status'
+	STOCK_STATUS: {
+		id: 'in_stock',
+		title: 'Stock status'
+	}
 }
 
 WishListModel.LIST = [
