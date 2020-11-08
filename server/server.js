@@ -1,3 +1,4 @@
 const app = require('./app')
+const config = require('./config/config')
 
-app.listen(3000, () => console.log(`Started on 3000`))
+app.listen(config.port, () => console.log(`Started on ${config.port}`))
