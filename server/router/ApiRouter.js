@@ -1,6 +1,6 @@
 const express = require('express')
 
-const { productsRouter } = require('./ProductsRouter')
+const { productRouter } = require('./ProductRouter')
 const { userRouter } = require('./UserRouter')
 
 class ApiRouter {
@@ -24,7 +24,7 @@ class ApiRouter {
 }
 
 const routes = [
-	{ url: '/products', router: productsRouter },
+	{ url: '/products', router: productRouter },
 	{ url: '/users', router: userRouter }
 ]
 

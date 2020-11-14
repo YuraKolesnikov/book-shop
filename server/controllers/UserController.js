@@ -14,6 +14,20 @@ class UserController {
 			res.status(500).send({ error })
 		}
 	}
+
+	async login(req, res) {
+		const { username, password } = req.body
+		res.status(200).send()
+	}
+
+	async subscribe(req, res) {
+		const { email } = req.body
+		res.status(200).send({ message: 'Subscribed!' })
+	}
+
+	async updateUser(req, res) {
+		res.status(202).send({ message: 'User updated' })
+	}
 }
 
 module.exports = {

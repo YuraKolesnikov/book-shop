@@ -10,14 +10,19 @@
 
 <script>
 import { api } from '@/api/api'
-
+import CategoryModel from '@/models/CategoryModel';
 export default {
   async mounted() {
-    const data = await api('/api/products').get()
-    console.log(data)
+    const result = await api('/products/create').post({
+      title: '',
+      author: 'Jack London',
+      price: 35,
+      category: CategoryModel.BIOGRAPHY.id,
+      publish_year: 2020,
+      created_at: new Date().toLocaleDateString().split('/').join('.')
+    })
 
-    const response = await api('/api/users/register').post({ username: 'cezar278@inbox.lv', password: 'Mrguitarmadness12' })
-    console.log(response)
+    console.log(result)
   }
 }
 </script>
