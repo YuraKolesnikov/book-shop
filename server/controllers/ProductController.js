@@ -25,7 +25,6 @@ class ProductController {
 
 		try {
 			const result = await productService.createProduct(body)
-			console.log(getTypeOf(result))
 			res.status(201).send(result)
 		} catch(error) {
 			res.status(400).send({ message: error.message })

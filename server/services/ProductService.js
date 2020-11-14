@@ -6,7 +6,10 @@ class ProductService {
 	}
 
 	async getProducts(query) {
-		/* Prepare query */
+		Object.keys(query).forEach(key => {
+			if (!query[key]) delete query[key]
+		})
+
 		const products = await this.productModel.getProducts(query)
 		return products
 	}
@@ -16,7 +19,6 @@ class ProductService {
 			const result = await this.productModel.createProduct(payload)
 			return result
 		} catch(error) {
-			console.log(error.message)
 			throw error
 		}
 	}

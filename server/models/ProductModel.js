@@ -8,8 +8,8 @@ class ProductModel {
 		this.mongoService = mongoService
 	}
 
-	async getProducts() {
-		const data = await Product.find({})
+	async getProducts(query) {
+		const data = await Product.find(query)
 		return data
 	}
 

@@ -10,8 +10,6 @@ class UserModel {
 	async register({ username, password }) {
 		const duplicateUser = await User.findOne({ username })
 
-		console.log(duplicateUser)
-
 		if (duplicateUser) {
 			throw ({ message: 'Username already taken!' })
 		}

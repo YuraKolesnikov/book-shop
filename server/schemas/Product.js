@@ -23,6 +23,7 @@ const ProductSchema = new Schema({
 		type: Number,
 		default: 0
 	},
+	first_publish_year: Number,
 	publish_year: Number,
 	img_url: String,
 	description: String,
