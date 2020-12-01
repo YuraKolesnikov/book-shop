@@ -1,26 +1,17 @@
 <template>
   <div>
-    <v-icon-button icon-name="facebook" :outlined="true" />
-    <v-icon-button icon-name="google" :outlined="true" />
-    <v-icon-button icon-name="twitter" :outlined="true" />
-    <v-icon-button icon-name="linkedin" :outlined="true" />
-    <v-icon-button icon-name="youtube" :outlined="true" />
-    <v-icon-button icon-name="love" />
-    <v-icon-button icon-name="chat-bubble" />
-    <v-icon-button icon-name="shopping-bag4" />
-    <v-icon-button icon-name="shopping-cart-full" />
-    <v-icon-button icon-name="heart-beat" />
-    <v-icon-button icon-name="search" />
-    <v-icon-button icon-name="love" :empty="true" />
-    <v-icon-button icon-name="chat-bubble" :empty="true" />
+    <v-button color="black">Filter</v-button>
+    <v-button color="main">Add to cart</v-button>
+    <v-button color="gray">Economics</v-button>
+    <v-button color="outlined">Sign in</v-button>
+
   </div>
 </template>
 <script>
-import VIconButton from 'Components/ui/VIconButton/VIconButton';
-import { api } from 'Api';
+import VButton from 'Components/ui/VButton/VButton';
 export default {
   components: {
-    VIconButton
+    VButton
   }
 }
 </script>
