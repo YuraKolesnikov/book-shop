@@ -63,6 +63,10 @@ export default {
     color: #fff;
     background-color: #ce7852;
   }
+
+  &:focus, &:active {
+    outline: 0;
+  }
 }
 
 .v-icon-button--outlined {
@@ -79,13 +83,19 @@ export default {
   width: 32px;
 
   &:hover {
+    background-color: transparent;
     color: #ce7852;
-    border-color: #ce7852;
   }
 }
 
 .v-icon-button--empty {
+  color: #ce7852;
   background-color: transparent;
   font-size: 11px;
+
+  &:hover {
+    background-color: transparent;
+    color: #ce7852;
+  }
 }
 </style>
